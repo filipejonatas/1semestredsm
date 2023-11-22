@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+        #menu {
+            display: flex;
+            justify-content: space-between;
+            height: 70px;
+            width: 100vw;
+            border-bottom: 1px solid #aaa;
+        }
+        #titulo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+        }
+        #corpo {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            background-color: #444;
+        }
+        form{
+            margin: auto;
+            color: white;
+            border-radius: 6px;
+        }
+        input{
+            display: flex;
+            height: 7vh;
+            width: 60vw;
+            font-weight: bold;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+        a{
+           text-decoration: none;
+           
+        }
+        .botao {
+            background-color: #1E90FF;
+            width: 20%;
+            color: white;
+            font-size: 2vw;
+            margin-left: 10px;
+            justify-content: center;
+            float: right;
+        }
+        fieldset{
+            padding: 2.5vh;
+            border-radius: 20px;
+        }
+        #rodape {
+            display: flex;
+            height: 80px;
+            width: 100vw;
+            border-top: 1px solid #aaa;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="menu">
+      <div id="titulo">
+        <h1>LOGIN</h1>
+      </div>
+    </div>
+    <div id="corpo">
+      <form>
+        <fieldset>
+          <legend>Login</legend>
+          <div>
+            <label>e-mail</label>
+            <input type="email" name="mail">
+          </div>
+          <label>Senha</label>
+          <input type="password" name="senha">
+          <div>
+            <div id="botoes">
+                <input type="submit" value="Limpar" class="botao">
+                <input type="reset" value="Enviar" class="botao">
+            </div>
+            <div>
+                <button><a href="">Cadastre-se</a></button>
+            </div>
+            <div>
+                <button><a href="">Esqueceu a senha?</a></button>
+            </div>
+        </fieldset>
+      </form>
+    </div>
+    <div id="rodape">
+    </div>
+  </body>
+</html>

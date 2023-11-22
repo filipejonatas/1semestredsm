@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exercício 10</title>
+    <style>
+        html {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            font-family: calibri;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+        #menu {
+            display: flex;
+            justify-content: space-between;
+            height: 70px;
+            width: 100vw;
+            border-bottom: 1px solid #aaa;
+        }
+        #avatar{
+            display: flex;
+            align-items: center;
+        }
+        #titulo{
+            display: flex;
+            align-items: center;
+        }
+        #corpo {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            background-color: #444;
+            align-items: center;   
+        }
+        form{
+            color: white;
+            margin: auto;
+            border-radius: 6px;    
+        }
+        input{
+            display: flex;
+            height: 7vh;
+            width: 60vw;
+            font-weight: bold;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+        .botao {
+            background-color: #1E90FF;
+            width: 20%;
+            color: white;
+            font-size: 2vw;
+            margin-left: 10px;
+            justify-content: center;
+            float: right;
+        }
+        #esquerda{
+            font-size: 30px;
+            flex-direction: column;
+            background-color: #444;
+            width: 200px;
+            height: 100%;
+        }
+        a{
+            display: block;
+            margin-top: 20px;
+            width: 200px;
+            height: auto;
+            margin-bottom: 10px;
+            color: #4169E1;
+            text-decoration: none;
+            border-bottom: 1px solid #4169E1 ;
+        }
+        
+        #esquerda > div > a:hover{
+            color: #FF1493;
+            border-bottom: 1px solid #FF1493;
+            
+        }
+        #esquerda > img{
+            display: flex;
+            margin: auto;
+        }
+        #direita {
+            margin: auto;
+        }
+         fieldset{
+            padding: 2.5vh;
+            border-radius: 20px; 
+         }
+        #rodape {
+            display: flex;
+            justify-content: space-around;
+            height: 80px;
+            width: 100vw;
+            border-top: 1px solid #aaa;   
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <div id="titulo">
+            <img src="./imagens/css.png" alt="" width="60" height="60" />
+            <div><h1>CSS3</h1></div>
+        </div>
+        <div id="avatar">
+            <div><h4>Bill Gates</h4></div>
+            <img src="./imagens/avatar.jpg" alt="" width="42" height="42" />
+        </div>
+    </div>
+    <div id="corpo">
+        <div id="esquerda">
+            <div>
+                <a href="./exercicio1.html">Exercício 01</a>
+                <a href="./exercicio2.html">Exercício 02</a>
+                <a href="./exercicio3.html">Exercício 03</a>
+                <a href="./exercicio4.html">Exercício 04</a>
+                <a href="./exercicio5.html">Exercício 05</a>
+                <a href="./exercicio6.html">Exercício 06</a>
+                <a href="./exercicio7.html">Exercício 07</a>
+                <a href="./exercicio8.html">Exercício 08</a>
+                <a href="./exercicio9.html">Exercício 09</a>
+            </div>
+            <img src="./imagens/html.png" alt="" width="128" height="128" />
+        </div>
+        <div id="direita">
+            <form>
+                <fieldset>
+                    <legend>Login</legend>
+                    <div>
+                        <label>e-mail</label>
+                        <input type="email" name="mail" />
+                    </div>
+                    <div>
+                        <label>Senha</label>
+                        <input type="password" name="senha" />
+                    </div>
+                    <div id="botoes">
+                        <input type="submit" value="Limpar" class="botao" />
+                        <input type="reset" value="Enviar" class="botao" />
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="rodape">
+        <img src="./imagens/Fatec.png" alt="" width="87" height="41" />
+        <img src="./imagens/CPS.png" alt="" width="85" height="56" />
+        <img src="./imagens/Brasao.png" alt="" width="81" height="54" />
+    </div>
+</body>
+</html>
